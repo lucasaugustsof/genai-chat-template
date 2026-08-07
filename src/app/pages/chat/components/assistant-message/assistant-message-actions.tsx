@@ -13,14 +13,11 @@ import {
   RiThumbDownFill,
 } from '@remixicon/react';
 
+import { CustomIconButton, type CustomIconButtonProps } from '@/app/components/custom-icon-button';
+import { Tooltip } from '@/app/components/tooltip';
 import { copySound, checkboxSound } from '@/lib/audio';
 import { cn } from '@/lib/cn';
 
-import {
-  CustomIconButton,
-  type CustomIconButtonProps,
-} from '../../../../components/custom-icon-button';
-import { Tooltip } from '../../../../components/tooltip';
 import { assistantMessageParts } from './anatomy';
 import { useSound } from '@web-kits/audio/react';
 
