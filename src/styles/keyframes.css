@@ -1,0 +1,26 @@
+@keyframes pop-in {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+    filter: blur(2px);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0px);
+  }
+}
+
+@keyframes pop-out {
+  from {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0px);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.8);
+    filter: blur(2px);
+  }
+}

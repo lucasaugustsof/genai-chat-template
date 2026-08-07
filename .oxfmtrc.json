@@ -4,7 +4,51 @@
   "singleQuote": true,
   "arrowParens": "always",
   "jsxSingleQuote": false,
-  "sortImports": true,
-  "sortTailwindcss": true,
+  "sortImports": {
+    "customGroups": [
+      {
+        "groupName": "react",
+        "elementNamePattern": ["react", "react-**"]
+      },
+      {
+        "groupName": "tanstack",
+        "elementNamePattern": ["@tanstack/*"]
+      },
+      {
+        "groupName": "ark-ui",
+        "elementNamePattern": ["@ark-ui/react/**"]
+      },
+      {
+        "groupName": "remixicon",
+        "elementNamePattern": ["@remixicon/react"]
+      },
+      {
+        "groupName": "internal",
+        "elementNamePattern": ["@/**"]
+      }
+    ],
+    "groups": [
+      "react",
+      {
+        "newlinesBetween": true
+      },
+      "tanstack",
+      {
+        "newlinesBetween": true
+      },
+      "ark-ui",
+      "remixicon",
+      "internal",
+      {
+        "newlinesBetween": true
+      },
+      "type-import",
+      "unknown"
+    ]
+  },
+  "sortTailwindcss": {
+    "functions": ["cn"],
+    "stylesheet": "./src/styles/index.css"
+  },
   "sortPackageJson": true
 }
