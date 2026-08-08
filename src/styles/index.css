@@ -1,16 +1,11 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
 
-@import './keyframes.css';
-@import './scroll-fade.css';
+@import 'utilities/scroll-fade.css';
 
 @theme inline {
   --text-sm-plus: 0.9375rem;
-
   --shadow-tooltip: 0 12px 24px 0 rgba(14, 18, 27, 0.06), 0 1px 2px 0 rgba(14, 18, 27, 0.03);
-
-  --animate-pop-in: pop-in 150ms ease-out;
-  --animate-pop-out: pop-out 150ms ease-out;
 }
 
 @layer base {

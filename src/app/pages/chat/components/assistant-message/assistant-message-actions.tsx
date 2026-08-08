@@ -60,14 +60,20 @@ function AssistantMessageCopyButton(props: AssistantMessageCopyButtonProps) {
           >
             <ArkPresence
               present={clipboard.copied}
-              className="data-[state=closed]:animate-pop-out data-[state=open]:animate-pop-in [&_svg]:fill-neutral-600"
+              className={cn('[&_svg]:fill-neutral-600', [
+                'data-[state=open]:animate-in data-[state=open]:fade-in data-[state=open]:zoom-in-60 data-[state=open]:blur-in-xs',
+                'data-[state=closed]:animate-out data-[state=closed]:fade-out data-[state=closed]:zoom-out-60 data-[state=closed]:blur-out-xs',
+              ])}
             >
               <RiCheckLine />
             </ArkPresence>
 
             <ArkPresence
               present={!clipboard.copied}
-              className="data-[state=closed]:animate-pop-out data-[state=open]:animate-pop-in"
+              className={cn([
+                'data-[state=open]:animate-in data-[state=open]:fade-in data-[state=open]:zoom-in-60 data-[state=open]:blur-in-xs',
+                'data-[state=closed]:animate-out data-[state=closed]:fade-out data-[state=closed]:zoom-out-60 data-[state=closed]:blur-out-xs',
+              ])}
               skipAnimationOnMount
             >
               <RiFileCopyLine />

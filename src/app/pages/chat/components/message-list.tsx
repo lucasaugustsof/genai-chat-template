@@ -55,7 +55,7 @@ export function MessageList({ messages }: MessageListProps) {
       role="log"
       aria-label="Conversation"
       tabIndex={0}
-      className="h-full scroll-fade-y overflow-y-auto px-4 py-12 outline-none scroll-fade-32"
+      className="h-full scroll-fade-y-12 overflow-y-auto px-4 py-12 outline-none"
     >
       <ul
         ref={rowVirtualizer.containerRef}
